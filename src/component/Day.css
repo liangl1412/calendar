@@ -1,0 +1,96 @@
+.day-box {
+    height: 100%;
+    transition: all 0.5s;
+    font-weight: bold;
+    flex: 1;
+    border-left: 1px solid #ccc;
+    position: relative;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.day-box:last-child {
+    border-right: 1px solid #ccc;
+}
+
+.day-box.other-month {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: normal;
+}
+
+.day-box.today {
+    background: #488DFF;
+}
+
+.day-number {
+    text-align: center;
+}
+
+.day-box.today .day-number {
+    color: #fff;
+}
+
+.event-modal-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.event-modal {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: calc(50% - 150px);
+    top: calc(50% - 100px);
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.event-modal h3 {
+    text-align: center;
+}
+
+.close-event {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+.event-input {
+    width: 100%;
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    line-height: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.event-box:hover {
+    width: 90%;
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.delete-event {
+    margin-right: 5px;
+    display: none;
+}
+
+.event-box:hover .delete-event {
+    display: block;
+}

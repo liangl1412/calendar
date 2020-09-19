@@ -1,0 +1,11 @@
+.week-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+    border-top: 1px solid #ccc;
+}
+
+.week-row:last-child {
+    border-bottom: 1px solid #ccc;
+}
