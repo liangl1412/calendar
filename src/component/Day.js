@@ -79,4 +79,4 @@ const Day = ({date, number, isCurrentMonth, isToday}) => {
     )
 }
 
-export default Day;
+export default React.memo(Day);

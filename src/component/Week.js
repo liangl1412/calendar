@@ -24,4 +24,4 @@ const Week = ({date, currentMonth}) => {
     )
 }
 
-export default Week;
+export default React.memo(Week);

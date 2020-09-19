@@ -6,10 +6,8 @@ import { StateProvider } from './store.js';
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <StateProvider>
-      <App />
-    </StateProvider>
-  </React.StrictMode>,
+  <StateProvider>
+    <App />
+  </StateProvider>,
   document.getElementById('root')
 );
