@@ -6,7 +6,7 @@ import { store, ACTION_TYPE } from '../store.js';
 
 
 const Day = ({date, number, isCurrentMonth, isToday}) => {
-    const formateDate = date.format("dddd, MMMM D"); // Monday, Tuesday ....
+    const formateDate = date.format("dddd, MMMM D");
     const id = date.unix();
     const globalState = useContext(store);
     const { dispatch, eventState } = globalState;
